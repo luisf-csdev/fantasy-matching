@@ -1,17 +1,24 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-// import { Container } from './styles';
+function refresh(target) {
+    if (target)
+        window.location.reload()
+    else
+        return
+}
 
-export default function GameOver(props) {
-    return (props.show ?
+export default function GameOver() {
+    return (
         <div>
             <div id="gameOver">
                 <div>
-                    Congratulations, you've beaten the game!!
+                    <h1>GAME OVER</h1>
+                    <p id='gameOver-description'>you've run out of time...</p>
                 </div>
-                <button id="restart" onClick={props.handleRestart}>Play Again</button>
+                <div id='gameOver-buttons'>
+                    <button className='gameOver-button' onClick={refresh}>TRY AGAIN</button>
+                </div>
             </div>
-        </div> : <Fragment />
+        </div>
     )
 }
-

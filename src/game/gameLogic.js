@@ -114,7 +114,8 @@ let logic = {
                 if (this.checkMatch()) {
                     this.clearCards();
                     if (this.checkGameOver()) {
-                        gameOverCallback()
+                    setTimeout(() => gameOverCallback(), 100)
+                        
                     }
                 } else {
                     setTimeout(() => {
@@ -132,6 +133,4 @@ let logic = {
 export default logic
 
 
-// insert a victory music!
 // insert a movement counter (every time you flip a pair of cards, is a new movement)
-// insert a "best score" ranking (lesser movements) and storage with local data
