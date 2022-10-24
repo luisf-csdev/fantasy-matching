@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import GameBoard from './components/GameBoard';
-import GameWin from './components/GameWin'
 import StartMenu from './components/StartMenu';
 import Difficulty from './components/Difficulty';
+import GameBoard from './components/GameBoard';
 import CountDown from './components/CountDown';
+import GameWin from './components/GameWin'
 import logic from './game/gameLogic';
 
 export default function MatchGame() {
 
+    const [gameBoard, setGameBoard] = useState(false)
     const [startMenu, setStartMenu] = useState(true);
     const [gameWin, setGameWin] = useState(false);
     const [countDown, setCountDown] = useState(false);
@@ -23,19 +24,21 @@ export default function MatchGame() {
         setStartMenu(true);
         setGameWin(false);
         setShowDifficulty(false)
+        setGameBoard(false)
     }
 
     function startGame() {
         logic.clearCards();
         setCards(logic.createCardsFromItems());
         setStartMenu(false);
+        setShowDifficulty(false);
+        setGameBoard(true);
         setCountDown(true);
         setGameWin(false);
-        setShowDifficulty(false);
     }
 
     function easy() {
-        const EASY = (2 * 60 * 1000) - 1;
+        const EASY = (60 * 60 * 1000) - 1;
         setCurrentDifficulty(EASY)
         startGame()
     }
@@ -47,7 +50,7 @@ export default function MatchGame() {
     }
 
     function hard() {
-        const HARD = (1 * 60 * 1000) - 1 
+        const HARD = (0 * 60 * 1000) - 1
         setCurrentDifficulty(HARD)
         startGame()
     }
@@ -55,7 +58,6 @@ export default function MatchGame() {
     function difficulty() {
         setShowDifficulty(true);
         setStartMenu(false);
-        setGameWin(false);
     }
 
     function handleFlip(card) {
@@ -69,12 +71,12 @@ export default function MatchGame() {
     }
 
     return (
-        <div>
-            <GameBoard handleFlip={handleFlip} cards={cards}></GameBoard>
+        <div id='container'>
             <StartMenu show={startMenu} handleStart={difficulty} />
             <Difficulty show={showDifficulty} handleEasy={easy} handleNormal={normal} handleHard={hard} />
-            <GameWin show={gameWin} handleRestart={startGame} handleMenu={mainMenu}></GameWin>
+            <GameBoard show={gameBoard} handleFlip={handleFlip} cards={cards}></GameBoard>
             <CountDown show={countDown} startCountdown={currentDifficulty} targetDate={difficulty} />
+            <GameWin show={gameWin} handleRestart={startGame} handleMenu={mainMenu}></GameWin>
         </div>
     )
 }

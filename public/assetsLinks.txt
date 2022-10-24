@@ -1,0 +1,16 @@
+--- LINKS OF THE ASSETS I'VE USED FOR THIS PROJECT: ---
+
+alert:  https://icons8.com/icon/aict5Qv2aJch/alert
+armor:  https://icons8.com/icon/AZ1SrwUEXNmN/peitoral-blindado
+arrow:  https://icons8.com/icon/42886/flecha
+crown:  https://icons8.com/icon/43152/coroa
+chest:  https://icons8.com/icon/zkEIZFgnUh-G/baú-do-tesouro
+dragon: https://icons8.com/icon/o_Zj_1WHijmd/ano-do-dragão
+hat:    https://icons8.com/icon/104331/bruxa
+key:    https://icons8.com/icon/51811/senha-1
+potion: https://icons8.com/icon/mZmGwBH8VtXY/mana
+shield: https://icons8.com/icon/AOITtXEPQNEA/escudo-de-cavaleiro
+staff:  https://icons8.com/icon/iOQrf3W10IeZ/cajado-mago
+sword:  https://icons8.com/icon/46864/espada
+
+--- PLEASE, VISIT THE ORIGINAL ARTIST THAT MADE THAT AWESOME VECTORS ---

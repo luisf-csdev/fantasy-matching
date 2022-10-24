@@ -5,8 +5,9 @@ function CountDown(props) {
     const dateTime = props.startCountdown + new Date().getTime();
 
     return (props.show ?
-        <CountdownTimer targetDate={dateTime} />
-        : <Fragment />)
+        <div id='countdown-container'>
+            <CountdownTimer targetDate={dateTime} />
+        </div> : <Fragment />)
 }
 
 export default CountDown;

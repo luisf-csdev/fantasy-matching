@@ -2,7 +2,7 @@ import React from 'react';
 
 const TimeDisplay = ({ value }) => {
   return (
-    <div className={'countdown'}>
+    <div>
       <p>{value}</p>
     </div>
   );

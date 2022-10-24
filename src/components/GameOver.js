@@ -9,14 +9,12 @@ function refresh(target) {
 
 export default function GameOver() {
     return (
-        <div>
-            <div id="gameOver">
-                <div>
-                    <h1>GAME OVER</h1>
-                    <p id='gameOver-description'>you've run out of time...</p>
-                </div>
-                <div id='gameOver-buttons'>
-                    <button className='gameOver-button' onClick={refresh}>TRY AGAIN</button>
+        <div className='menu'>
+            <div className='menu-container'>
+                <h1 className='menu-title'>GAME OVER</h1>
+                <p className='desc'>you've run out of time...</p>
+                <div className='menu-btns'>
+                    <button className='menu-btn' onClick={refresh}>TRY AGAIN</button>
                 </div>
             </div>
         </div>

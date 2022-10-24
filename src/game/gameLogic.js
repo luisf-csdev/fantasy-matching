@@ -66,9 +66,6 @@ let logic = {
 
         this.cards = [];
 
-        // for(let game of games) {
-        //     cards.push(createPairFromGame(game))
-        // }
         this.items.forEach(item => {
             this.cards.push(this.createPairFromItem(item))
         });
@@ -131,6 +128,3 @@ let logic = {
 }
 
 export default logic
-
-
-// insert a movement counter (every time you flip a pair of cards, is a new movement)

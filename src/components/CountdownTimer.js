@@ -5,7 +5,7 @@ import GameOver from './GameOver';
 
 const ShowCounter = ({ minutes, seconds }) => {
     return (
-        <div className="show-counter">
+        <div id="countdown">
             <TimeDisplay value={minutes} />:<TimeDisplay value={seconds} />
         </div>
     );
@@ -18,7 +18,5 @@ const CountdownTimer = ({ targetDate }) => {
         (minutes + seconds <= 0) ? <GameOver /> : <ShowCounter minutes={minutes} seconds={seconds} />
     )
 }
-
-
 
 export default CountdownTimer;
