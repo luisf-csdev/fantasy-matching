@@ -50,7 +50,7 @@ export default function MatchGame() {
     }
 
     function hard() {
-        const HARD = (0 * 60 * 1000) - 1
+        const HARD = (1 * 60 * 1000) - 1
         setCurrentDifficulty(HARD)
         startGame()
     }
