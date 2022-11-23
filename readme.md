@@ -68,15 +68,23 @@ npm run dev
 <span>
     <a href='https://reactjs.org/'>
         <img alt="luisf-react" height="50rem"
-            src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+            src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+        />
     </a>
     <a href='https://nodejs.org/'>
         <img alt="luisf-node" height="50rem"
-            src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
+            src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
+        />
     </a>   
     <a href='https://www.javascript.com/'>
         <img alt="luisf-js" height="50rem" 
-            src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+            src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+        />
+    </a>
+    <a href='https://developer.mozilla.org/en-US/docs/Web/CSS'>
+        <img alt="luisf-js" height="50rem" 
+            src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" 
+        />
     </a>
 </span><br><br><br>
 
