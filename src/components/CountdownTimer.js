@@ -15,7 +15,8 @@ const CountdownTimer = ({ targetDate }) => {
     const [minutes, seconds] = useCountdown(targetDate);
 
     return (
-        (minutes + seconds <= 0) ? <GameOver /> : <ShowCounter minutes={minutes} seconds={seconds} />
+        (minutes + seconds <= 0) ? <GameOver /> : <ShowCounter minutes={'0' + minutes} 
+        seconds={seconds >= 10 ? seconds : '0' + seconds } />
     )
 }
 

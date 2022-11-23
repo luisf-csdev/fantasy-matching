@@ -7,7 +7,7 @@ function StartMenu(props) {
                 <h1 className='menu-title'>Fantasy Matching</h1>
                 <div className='menu-btns'>
                     <button className='menu-btn' onClick={props.handleStart}>START</button>
-                    <a href='https://github.com/luisf-csdev/match-game'>
+                    <a href='https://github.com/luisf-csdev/fantasy-matching'>
                         <button className='menu-btn'>ABOUT</button>
                     </a>
                 </div>

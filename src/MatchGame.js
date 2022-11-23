@@ -38,7 +38,7 @@ export default function MatchGame() {
     }
 
     function easy() {
-        const EASY = (60 * 60 * 1000) - 1;
+        const EASY = (2 * 60 * 1000) - 1;
         setCurrentDifficulty(EASY)
         startGame()
     }
