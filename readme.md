@@ -20,6 +20,7 @@
 <br>
 
 ## 📌 Features
+- [x] Reusable game logic
 - [x] Three levels of difficulties based on time
 - [x] Countdown to keep you uptight
 - [x] Immersive experience on fullscreen mode
